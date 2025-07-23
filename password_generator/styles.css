@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #192734;
+  color: #fff;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  gap: 2rem;
+}
+
+.panel {
+  background: #223042;
+  border-radius: 8px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 400px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #22d46b;
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+  color: #b0b8c1;
+  font-size: 1rem;
+}
+
+.generate-btn {
+  background: #22d46b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background 0.2s;
+}
+.generate-btn:hover {
+  background: #1bb05a;
+}
+
+.passwords {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.password-field {
+  background: #1a2533;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.toggle-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: -2.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+#toggle-mode {
+  background: #223042;
+  color: #22d46b;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+#toggle-mode:hover {
+  background: #22d46b;
+  color: #fff;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background: #eafff6;
+  color: #1a2533;
+}
+body.light-mode .panel {
+  background: #f6fffa;
+  color: #1a2533;
+}
+body.light-mode .generate-btn {
+  background: #22d46b;
+  color: #fff;
+}
+body.light-mode .generate-btn:hover {
+  background: #1bb05a;
+}
+body.light-mode .password-field {
+  background: #223042;
+  color: #fff;
+}
+body.light-mode #toggle-mode {
+  background: #f6fffa;
+  color: #22d46b;
+}
+body.light-mode #toggle-mode:hover {
+  background: #22d46b;
+  color: #fff;
+} 

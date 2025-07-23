@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="toggle-container">
+    <button id="toggle-mode" aria-label="Toggle light/dark mode">
+      <span id="toggle-icon">🌙</span>
+    </button>
+  </div>
+  <div class="container">
+    <div class="panel">
+      <h1>Generate a <br><span class="highlight">random password</span></h1>
+      <p>Never use an insecure password again.</p>
+      <button class="generate-btn">Generate passwords</button>
+      <div class="passwords">
+        <input type="text" class="password-field" readonly placeholder="" />
+        <input type="text" class="password-field" readonly placeholder="" />
+      </div>
+    </div>
+    <div class="panel">
+      <h1>Generate a <br><span class="highlight">random password</span></h1>
+      <p>Never use an insecure password again.</p>
+      <button class="generate-btn">Generate passwords</button>
+      <div class="passwords">
+        <input type="text" class="password-field" readonly placeholder="" />
+        <input type="text" class="password-field" readonly placeholder="" />
+      </div>
+    </div>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('toggle-mode');
+    const toggleIcon = document.getElementById('toggle-icon');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      if(document.body.classList.contains('light-mode')) {
+        toggleIcon.textContent = '☀️';
+      } else {
+        toggleIcon.textContent = '🌙';
+      }
+    });
+  </script>
+</body>
+</html> 
