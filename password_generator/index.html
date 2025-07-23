@@ -16,21 +16,21 @@
     <div class="panel">
       <h1>Generate a <br><span class="highlight">random password</span></h1>
       <p>Never use an insecure password again.</p>
-      <button class="generate-btn">Generate passwords</button>
+      <button class="generate-btn" id="generate-btn-1">Generate passwords</button>
       <div class="passwords">
-        <input type="text" class="password-field" readonly placeholder="" />
-        <input type="text" class="password-field" readonly placeholder="" />
+        <input type="text" class="password-field" id="generated-password-1a" readonly placeholder="Password 1" />
+        <input type="text" class="password-field" id="generated-password-1b" readonly placeholder="Password 2" />
       </div>
     </div>
-    <div class="panel">
+    <!-- <div class="panel">
       <h1>Generate a <br><span class="highlight">random password</span></h1>
       <p>Never use an insecure password again.</p>
-      <button class="generate-btn">Generate passwords</button>
+      <button class="generate-btn" id="generate-btn-2">Generate passwords</button>
       <div class="passwords">
-        <input type="text" class="password-field" readonly placeholder="" />
-        <input type="text" class="password-field" readonly placeholder="" />
+        <input type="text" class="password-field" id="generated-password-2a" readonly placeholder="Password 1" />
+        <input type="text" class="password-field" id="generated-password-2b" readonly placeholder="Password 2" />
       </div>
-    </div>
+    </div> -->
   </div>
   <script>
     const toggleBtn = document.getElementById('toggle-mode');
@@ -44,5 +44,6 @@
       }
     });
   </script>
+  <script src="script.js"></script>
 </body>
 </html> 
