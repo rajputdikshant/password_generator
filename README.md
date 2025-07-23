@@ -15,7 +15,7 @@ A modern, stylish web app to generate strong, random passwords instantly. Never 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone [<repo-url>](https://github.com/rajputdikshant/password_generator)
    cd password_generator
    ```
 2. **Open `index.html` in your browser.**
